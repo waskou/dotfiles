@@ -1,0 +1,39 @@
+# change window focus within space
+cmd - j : yabai -m window --focus south
+cmd - k : yabai -m window --focus north
+cmd - h : yabai -m window --focus west
+cmd - l : yabai -m window --focus east
+
+# move window and split
+cmd + shift - j : yabai -m window --warp south
+cmd + shift - k : yabai -m window --warp north
+cmd + shift - h : yabai -m window --warp west
+cmd + shift - l : yabai -m window --warp east
+
+# change focus between spaces/monitors
+alt - j: yabai -m space --focus prev
+alt - k: yabai -m space --focus next
+alt - h: yabai -m display --focus west
+alt - l: yabai -m display --focus east
+
+# move window to prev and next space/monitor
+alt + shift - j : yabai -m window --space prev; yabai -m space --focus prev; yabai -m window --focus east;
+alt + shift - k : yabai -m window --space next; yabai -m space --focus next; yabai -m window --focus east;
+alt + shift - h : yabai -m window --display west; yabai -m display --focus west;
+alt + shift - l : yabai -m window --display east; yabai -m display --focus east;
+
+# resizing windows
+ctrl + shift - h : yabai -m window west --resize right:-20:0 2> /dev/null || yabai -m window --resize right:-20:0
+ctrl + shift - j : yabai -m window north --resize bottom:0:20 2> /dev/null || yabai -m window --resize bottom:0:20
+ctrl + shift - k : yabai -m window south --resize top:0:-20 2> /dev/null || yabai -m window --resize top:0:-20
+ctrl + shift - l : yabai -m window east --resize left:20:0 2> /dev/null || yabai -m window --resize left:20:0
+
+# toggle float, maximize, balance
+alt + shift - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt + shift - m : yabai -m window --toggle zoom-fullscreen
+alt + shift - e : yabai -m space --balance
+
+# stop/start/restart yabai
+alt + shift - q : yabai --stop-service
+alt + shift - s : yabai --start-service
+alt + shift - r : yabai --restart-service
