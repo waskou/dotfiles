@@ -21,7 +21,7 @@
                         "description": "CapsLock to Hyper",
                         "manipulators": [
                             {
-                                "description": "CapsLock click equal to ESC press equal to hyper",
+                                "description": "CapsLock press equal to hyper",
                                 "from": {
                                     "key_code": "caps_lock",
                                     "modifiers": {
@@ -38,11 +38,6 @@
                                             "right_control",
                                             "right_option"
                                         ]
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "escape"
                                     }
                                 ],
                                 "type": "basic"
@@ -207,7 +202,7 @@
                             {
                                 "description": "Move to the beginning of the current line",
                                 "from": {
-                                    "key_code": "u",
+                                    "key_code": "m",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -230,7 +225,7 @@
                             {
                                 "description": "Move to the end of the current line",
                                 "from": {
-                                    "key_code": "p",
+                                    "key_code": "semicolon",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -256,7 +251,7 @@
                                     "key_code": "spacebar",
                                     "modifiers": {
                                         "mandatory": [
-					    															"left_command",
+                                            "left_command",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -267,10 +262,243 @@
                                 "to": [
                                     {
                                         "key_code": "backslash",
-					"modifiers": [
-					    "left_shift",
-							"left_control"
-					]
+                                        "modifiers": [
+                                            "left_shift",
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "<C-.> selection (mathematica)",
+                                "from": {
+                                    "key_code": "period",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "period",
+                                        "modifiers": [
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "<Command-Shift-B> selection (mathematica)",
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "b",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Copy",
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Paste",
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Delete (with cut)",
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "x",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Undo",
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "z",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "Home",
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "fn"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "End",
+                                "from": {
+                                    "key_code": "backslash",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "fn"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "PageUp",
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "fn"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "PageDown",
+                                "from": {
+                                    "key_code": "close_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "fn"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -291,9 +519,9 @@
                                 "to": [
                                     {
                                         "key_code": "backslash",
-					"modifiers": [
-					    "left_shift"
-					]
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -309,7 +537,7 @@
                                     "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_shift",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -333,7 +561,7 @@
                                     "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_shift",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -357,7 +585,7 @@
                                     "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_shift",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -381,7 +609,7 @@
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_shift",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -405,7 +633,7 @@
                                     "key_code": "i",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_shift",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -430,7 +658,7 @@
                                     "key_code": "o",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_shift",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -452,10 +680,10 @@
                             {
                                 "description": "Selection to the beginning of the current line",
                                 "from": {
-                                    "key_code": "u",
+                                    "key_code": "m",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_shift",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -477,10 +705,10 @@
                             {
                                 "description": "Selection to the end of the current line",
                                 "from": {
-                                    "key_code": "p",
+                                    "key_code": "semicolon",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command",
+                                            "left_shift",
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -660,7 +888,48 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [],
+            "simple_modifications": [
+                {
+                    "from": {
+                        "key_code": "left_command"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_option"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "left_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_command"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_option"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_command"
+                        }
+                    ]
+                }
+            ],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,

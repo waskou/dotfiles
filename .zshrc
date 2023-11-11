@@ -130,6 +130,6 @@ unset __conda_setup
 alias lazygit='git add . && git commit -m "newest" && git push'
 
 alias sync000='rsync -av --delete ~/000/ ~/Dropbox/000'
-alias syncSchwarzian='rsync -av --delete --include={"--DoubleLimitCCLPThermodynamics--/***","--Project-Schwarzian--/***","bib-inspireized.bib","documents.tex","JHEP.bst","preamble.tex"} --exclude="*" ~/000/Notes/ ~/Dropbox/Schwarzian/Vasko/Notes/'
+alias syncSchwarzian='rsync -av --delete --include={"--DoubleLimitCCLPThermodynamics--/***","--Project-Schwarzian--/***","--NearHorizonCCLP--/***","bib-inspireized.bib","documents.tex","JHEP.bst","preamble.tex"} --exclude="*" ~/000/Notes/ ~/Dropbox/Schwarzian/Vasko/Notes/'
 
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/.git --work-tree=$HOME/dotfiles'

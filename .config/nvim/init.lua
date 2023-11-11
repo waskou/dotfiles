@@ -23,4 +23,9 @@ require("josean.plugins.surround")
 vim.cmd([[
 autocmd BufRead,BufNewFile * setlocal spell spelllang=en_gb
 " autocmd BufRead,BufNewFile *.tex set syntax=tex
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
+let g:pickachu_default_date_format = "\\mydate{%d}{%m}{%Y}"
+iab <expr> ddate strftime("%c")
+iab <expr> ttime strftime("%H:%M")
+iab <expr> ptime strftime("%l:%M %p")
 ]])

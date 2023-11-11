@@ -163,7 +163,11 @@ return packer.startup(function(use)
     end,
   })
 
-  use({ "kassio/neoterm" })
+  -- use({ "mattn/calendar-vim" })
+
+  use({ "DougBeney/pickachu" })
+
+  -- use({ "kassio/neoterm" })
 
   if packer_bootstrap then
     require("packer").sync()
